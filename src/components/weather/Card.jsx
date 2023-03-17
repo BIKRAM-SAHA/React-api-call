@@ -9,6 +9,10 @@ function Card() {
   const [weather, setWeather] = useState({ temp: "", type: "", country: "" });
   const [location, setLocation] = useState("");
 
+  useEffect(() => {
+    setIsLoading(true);
+  }, []);
+
   const handleSubmit = () => {
     setIsLoading(true);
     axios
@@ -16,7 +20,6 @@ function Card() {
         `${process.env.REACT_APP_WEATHER_API}?q=${location}&appid=${process.env.REACT_APP_WEATHER_API_KEY}`
       )
       .then((response) => {
-        console.log(response.data);
         const result = response.data;
         setWeather({
           temp: (result.main.temp - 273).toFixed(2),

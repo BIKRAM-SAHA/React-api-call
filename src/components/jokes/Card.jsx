@@ -10,7 +10,6 @@ function Card() {
 
   useEffect(() => {
     axios.get(`${process.env.REACT_APP_JOKES_API}/random`).then((response) => {
-      console.log(response.data);
       setJoke(response.data);
       setIsLoading(false);
     });
