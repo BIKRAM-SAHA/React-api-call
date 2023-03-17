@@ -10,7 +10,7 @@ function About() {
         it helps! (somehow :p)
       </p>
       <p>
-        Image Credits:
+        Credits:
         <ul>
           <li>
             <a
@@ -20,6 +20,16 @@ function About() {
               Image by starline
             </a>{" "}
             on Freepik
+          </li>
+          <li>
+            <a href="https://uiverse.io/Cornerstone-04/little-mouse-69">
+              loader 1
+            </a>
+          </li>
+          <li>
+            <a href="https://uiverse.io/youranonone10/young-otter-44">
+              loader 2
+            </a>
           </li>
         </ul>
       </p>

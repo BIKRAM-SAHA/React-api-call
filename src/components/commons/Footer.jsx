@@ -24,10 +24,18 @@ function Footer() {
       <div>
         <span className="footer-title">Social</span>
         <div className="grid grid-flow-col gap-4">
-          <a href="https://www.linkedin.com/in/bikram-saha-4b3b731bb" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/bikram-saha-4b3b731bb"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaGithub className="text-xl" />
           </a>
-          <a href="https://www.linkedin.com/in/bikram-saha-4b3b731bb" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/bikram-saha-4b3b731bb"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaLinkedinIn className="text-xl" />
           </a>
         </div>

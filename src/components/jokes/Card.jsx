@@ -1,16 +1,21 @@
-import React from "react";
+import { useContext, useEffect, useState } from "react";
+import { LoaderContext } from "../../contexts/LoaderContextProvider";
+import axios from "axios";
 import chuckNorris from "../../assets/images/bg/bg2.png";
+import JokeLoader from "../commons/JokeLoader";
 
 function Card() {
-  const joke = {
-    categories: ["funny", "gummy"],
-    created_at: "2020-01-05 13:42:29.855523",
-    icon_url: "https://assets.chucknorris.host/img/avatar/chuck-norris.png",
-    id: "XzqcWnrYQbu4JggkIj-WZQ",
-    updated_at: "2020-01-05 13:42:29.855523",
-    url: "https://api.chucknorris.io/jokes/XzqcWnrYQbu4JggkIj-WZQ",
-    value: "Chuck Norris can bend irony into balloon-animal shapes.",
-  };
+  const { isLoading, setIsLoading } = useContext(LoaderContext);
+  const [joke, setJoke] = useState({});
+
+  useEffect(() => {
+    axios.get(`${process.env.REACT_APP_JOKES_API}/random`).then((response) => {
+      console.log(response.data);
+      setJoke(response.data);
+      setIsLoading(false);
+    });
+  }, []);
+
   return (
     <div className="card w-96 bg-base-100 shadow-xl m-auto">
       <figure>
@@ -18,16 +23,22 @@ function Card() {
       </figure>
       <div className="card-body">
         <h2 className="card-title">Chuck Norris</h2>
-        <p>{joke.value}</p>
-        <div className="card-actions justify-end min-h-{20}">
-        {joke.categories.map((item) => {
-            return (
-              <div className="badge badge-primary" key={item}>
-                {item}
-              </div>
-            );
-          })}
-        </div>
+        {isLoading ? (
+          <JokeLoader />
+        ) : (
+          <>
+            <p>{joke?.value}</p>
+            <div className="card-actions justify-end min-h-{20}">
+              {joke.categories?.map((item) => {
+                return (
+                  <div className="badge badge-primary" key={item}>
+                    {item}
+                  </div>
+                );
+              })}
+            </div>
+          </>
+        )}
       </div>
     </div>
   );
