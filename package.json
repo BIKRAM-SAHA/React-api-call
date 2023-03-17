@@ -1,5 +1,6 @@
 {
   "name": "react-api-site",
+  "homepage": "https://bikram-saha.github.io/React-api-call/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
