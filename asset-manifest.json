@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/React-api-call/static/css/main.e54c3945.css",
-    "main.js": "/React-api-call/static/js/main.f9d873dd.js",
+    "main.css": "/React-api-call/static/css/main.8a79dea8.css",
+    "main.js": "/React-api-call/static/js/main.113ea9a1.js",
     "static/media/bg1.jpg": "/React-api-call/static/media/bg1.3b6ab2245f4b24add43c.jpg",
     "static/media/bg2.png": "/React-api-call/static/media/bg2.a6672c686faa3d05a03e.png",
+    "static/media/starEyeEmoji.svg": "/React-api-call/static/media/starEyeEmoji.373c028de72c92fa24fbf5fe307a5b89.svg",
+    "static/media/victoryEmoji.svg": "/React-api-call/static/media/victoryEmoji.86bbad4780dea6850142884fe5be4d3e.svg",
     "index.html": "/React-api-call/index.html",
-    "main.e54c3945.css.map": "/React-api-call/static/css/main.e54c3945.css.map",
-    "main.f9d873dd.js.map": "/React-api-call/static/js/main.f9d873dd.js.map"
+    "main.8a79dea8.css.map": "/React-api-call/static/css/main.8a79dea8.css.map",
+    "main.113ea9a1.js.map": "/React-api-call/static/js/main.113ea9a1.js.map"
   },
   "entrypoints": [
-    "static/css/main.e54c3945.css",
-    "static/js/main.f9d873dd.js"
+    "static/css/main.8a79dea8.css",
+    "static/js/main.113ea9a1.js"
   ]
 }
