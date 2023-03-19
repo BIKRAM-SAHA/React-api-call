@@ -15,6 +15,8 @@ function About() {
           <li>
             <a
               href="https://www.freepik.com/free-vector/elegant-cloud-background-blue-sky-design_8562853.htm#query=weather&position=15&from_view=search&track=sph"
+              target="_blank"
+              rel="noreferrer"
               className=" text-blue-500"
             >
               Image by starline
@@ -22,12 +24,22 @@ function About() {
             on Freepik
           </li>
           <li>
-            <a href="https://uiverse.io/Cornerstone-04/little-mouse-69">
+            <a
+              href="https://uiverse.io/Cornerstone-04/little-mouse-69"
+              target="_blank"
+              rel="noreferrer"
+              className=" text-blue-500"
+            >
               loader 1
             </a>
           </li>
           <li>
-            <a href="https://uiverse.io/youranonone10/young-otter-44">
+            <a
+              href="https://uiverse.io/youranonone10/young-otter-44"
+              target="_blank"
+              rel="noreferrer"
+              className=" text-blue-500"
+            >
               loader 2
             </a>
           </li>

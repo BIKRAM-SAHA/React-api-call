@@ -9,10 +9,12 @@ function Card() {
   const [joke, setJoke] = useState({});
 
   useEffect(() => {
+    setIsLoading(true);
     axios.get(`${process.env.REACT_APP_JOKES_API}/random`).then((response) => {
       setJoke(response.data);
       setIsLoading(false);
     });
+    // eslint-disable-next-line
   }, []);
 
   return (

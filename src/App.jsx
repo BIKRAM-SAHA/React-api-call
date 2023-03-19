@@ -13,7 +13,7 @@ function App() {
   return (
     <LoaderContextProvider>
       <Router>
-        <div className="h-screen flex flex-col justify-between min-h-full">
+        <div className="h-screen flex flex-col justify-between min-h-full overflow-x-hidden">
           <Navbar />
           <main className="flex-1 px-8 my-10">
             <Routes>

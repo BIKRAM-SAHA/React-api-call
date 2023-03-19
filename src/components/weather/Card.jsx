@@ -11,6 +11,7 @@ function Card() {
 
   useEffect(() => {
     setIsLoading(true);
+    // eslint-disable-next-line
   }, []);
 
   const handleSubmit = () => {
